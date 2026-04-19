@@ -15,26 +15,42 @@ public class TareaDosTeprooConvTemper {
     public static void main(String[] args) {
       
         Scanner scannerEntrada = new Scanner(System.in);
-       
-//ConversionTemperatura temperatura = new ConversionTemperatura ();
-       
-
+       ConversionTemperatura obj = new ConversionTemperatura ();
+        System.out.println("1. Celsius a Fahrenheit");
+        System.out.println("2.  Fahrenheit a Celsius ");
+        int opcion = scannerEntrada.nextInt();
+        
+        
 //solicitar al usuario 
         System.out.println("Ingrese la temperatura: ");
         double temp =  scannerEntrada.nextDouble();
        
         
-//crear objeto
-        ConversionTemperatura obj = new ConversionTemperatura (temp);
+        
+        
+      obj.setTemp(temp);
+      
+      if(opcion == 1) {
+          System.out.println("Resultado: " +obj.ConversionAFarenheit());
+          
+      }else if (opcion == 2) {
+          System.out.println("Resultado: "+ obj.convertirAcelsius());
+          
+      }else {
+          System.out.println("Opcion invalida");
+      }
+
        
- //obtener resultado
-        double resultado = obj.ConversionAFarenheit();
+ //obtener resultad
+        //double resultado = obj.ConversionAFarenheit();
         
 //Mostrar resultados
-        System.out.printf("Temperatura en farenheit: %.2f%n ", resultado);
+      //  System.out.printf("Temperatura en farenheit: %.2f%n ", resultado);
         
          scannerEntrada.close();
         
     }
     
 }
+
+//probandooooooS
