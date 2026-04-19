@@ -53,9 +53,11 @@ public class ConversionTemperatura {
          return (temp - 32)*5 / 9;
      }
     
-     
-     /*Se debe solicitar los datos al usuario, captarlos a través de un objeto Scanner y
-      finalmente reportar la respuesta*/
+     //Método para convertir Celsius a Kelvin
+     public double convertirAkelvin(){
+         return temp + 273.15;
+     }
+    
      
      
 }

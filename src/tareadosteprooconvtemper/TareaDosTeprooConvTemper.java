@@ -18,6 +18,8 @@ public class TareaDosTeprooConvTemper {
        ConversionTemperatura obj = new ConversionTemperatura ();
         System.out.println("1. Celsius a Fahrenheit");
         System.out.println("2.  Fahrenheit a Celsius ");
+        System.out.println("3. Celsius a kelvin");
+        System.out.println("Seleccione una opcion por favor: ");
         int opcion = scannerEntrada.nextInt();
         
         
@@ -35,8 +37,11 @@ public class TareaDosTeprooConvTemper {
           
       }else if (opcion == 2) {
           System.out.println("Resultado: "+ obj.convertirAcelsius());
+             
+      }else if (opcion == 3) {
+          System.out.println("Resultado: "+  obj.convertirAkelvin());
           
-      }else {
+      } else {
           System.out.println("Opcion invalida");
       }
 
