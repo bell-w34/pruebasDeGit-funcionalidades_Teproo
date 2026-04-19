@@ -47,7 +47,11 @@ public class ConversionTemperatura {
      }
 
 
-     
+      
+    //Metodo para convertir Fahrenheit a celsius
+     public double convertirAcelsius(){
+         return (temp - 32)*5 / 9;
+     }
     
      
      /*Se debe solicitar los datos al usuario, captarlos a través de un objeto Scanner y
